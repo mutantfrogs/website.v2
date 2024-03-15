@@ -19,6 +19,9 @@
 body{
     background-image: url('./../assets/background.gif');
 }
+.galleryHeader{
+    font-size: 40px;
+}
 
 .headerNavigationDiv{
     display: flex;
@@ -100,6 +103,13 @@ body{
         margin-bottom: 4%;
     }
   }
+
+.galleryContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
 
 
 

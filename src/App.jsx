@@ -5,7 +5,7 @@ import AboutPage from './pages/AboutPage';
 import GalleryPage from './pages/GalleryPage';
 import BlogPage from './pages/BlogPage';
 import Header from './components/Header'
-import './styles/lightTheme.css'
+import './styles/styles.css'
 
 function App() {
     return(

@@ -5,7 +5,7 @@ export default function BlogPage(props){
     useEffect(() => {document.title = props.title;return () => {};}, [props.title]);
 
     return (
-    <div>
+    <div className='flexContainerColumn'>
         <h1 className='urgentHeader'>UNDER CONSTRUCTION!</h1>
     </div>
     )

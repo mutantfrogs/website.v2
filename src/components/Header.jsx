@@ -1,7 +1,7 @@
-import defaultBanner from './../assets/defaultBanner.png'
-import aboutBanner from './../assets/aboutBanner.png'
-import galleryBanner from './../assets/galleryBanner.png'
-import blogBanner from './../assets/blogBanner.png'
+import defaultBanner from '../assets/defaultBanner.png'
+import aboutBanner from '../assets/aboutBanner.png'
+import galleryBanner from '../assets/galleryBanner.png'
+import blogBanner from '../assets/blogBanner.png'
 import { Link, useLocation } from 'react-router-dom';
 
 export default function Header() {
@@ -22,9 +22,9 @@ export default function Header() {
   };
 
   return (
-    <div className='headerDiv'>
+    <div>
       <img className='headerBanner' src={getBannerImage()} alt='logo'></img>
-        <div className='headerNavigationDiv'>
+        <div className='flexContainerRow'>
           <Link to="/">
             <button className='headerNavigationBtn'>home</button>
             </Link>
@@ -36,7 +36,7 @@ export default function Header() {
             </Link>
           <Link to="/blog">
             <button className='headerNavigationBtn'>blog</button>
-            </Link>  
+            </Link>
         </div>
     </div>  
   )

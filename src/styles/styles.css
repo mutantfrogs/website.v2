@@ -1,3 +1,11 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-image: url('./../assets/background.gif');
+}
+
 .urgentHeader{
     color: red;
     font-size: 96px;
@@ -12,21 +20,21 @@
     100% { color: rgb(255, 21, 21); } 
   }
 
-* {
-    font-family: 'Courier New', Courier, monospace;
-}
-
-body{
-    background-image: url('./../assets/background.gif');
-}
-.galleryHeader{
-    font-size: 40px;
-}
-
-.headerNavigationDiv{
+.flexContainerRow{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.flexContainerColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.centeredText{
+    text-align: center;
 }
 
 .headerNavigationBtn{
@@ -50,69 +58,12 @@ body{
     margin-bottom: 30px;
 }
 
-@media (max-width: 767px) {
-    .headerBanner {
-        max-width: 99%;
-    }
-  }
-
-.socialsDiv{
-    display: flex;
-    justify-content: center;
-    align-items: center
-}
-
-.socialsLinks{
+.socialsBtn{
     max-height: 40px;
     margin-left: 20px;
     margin-right: 20px;
 }
 
-.socialsLinks:hover {
+.socialsBtn:hover {
     transform: scale(1.1);
   }
-
-.socialsNote{
-    text-align: center;
-}
-
-.aboutContainer{
-    margin-top: 2%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.plaque{
-    max-width: 380px;
-}
-
-@media (max-width: 767px) {
-    .plaque {
-        max-width: 90%;
-    }
-  }
-
-.plauqeDiv{
-    text-align: center;
-    margin-bottom: 1%;
-}
-
-@media (max-width: 767px) {
-    .plauqeDiv {
-        margin-top: 5%;
-        margin-bottom: 4%;
-    }
-  }
-
-.galleryContainer{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-
-
-
-
-

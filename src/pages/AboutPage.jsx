@@ -1,4 +1,6 @@
 import { useEffect } from 'react';
+import Canvas3D from '../components/Canvas3D';
+import Socials from '../components/Socials';
 
 export default function AboutPage(props){
 
@@ -6,7 +8,8 @@ export default function AboutPage(props){
 
     return (
     <div className='flexContainerColumn'>
-       
+        <Canvas3D/>
+        <Socials/>
     </div>
     )
 }

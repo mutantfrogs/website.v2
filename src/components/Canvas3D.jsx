@@ -26,7 +26,7 @@ function Mesh3D(){
 export default function Canvas3D(){
     return(
         <div>
-            <Canvas style={{ width: '50vw', height: '60vh'}} orthographic camera={{ zoom: 100, position: [0, 0, 100] }}>
+            <Canvas style={{ width: '16vw', height: '60vh', marginLeft: '-20px' ,marginRight: '20px'}} orthographic camera={{ zoom: 100, position: [0, 0, 100] }}>
                 <ambientLight intensity={0.5} />
                 <directionalLight color="white" position={[10, 10, 10]} /> 
                 <Mesh3D/>

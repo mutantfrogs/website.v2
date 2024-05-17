@@ -1,12 +1,13 @@
 import { useEffect } from 'react';
+import UnderConstruction from '../components/UnderConstruction';
 
 export default function BlogPage(props){
 
     useEffect(() => {document.title = props.title;return () => {};}, [props.title]);
 
     return (
-    <div className='flexContainerColumn'>
-        <h1 className='urgentHeader'>UNDER CONSTRUCTION!</h1>
+    <div>
+        <UnderConstruction></UnderConstruction>
     </div>
     )
 }

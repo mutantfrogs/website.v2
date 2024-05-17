@@ -6,7 +6,6 @@ export default function HomePage(props){
 
     return (
     <div className='flexContainerColumn'>
-        
     </div>
     )
 }

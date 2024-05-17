@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import GalleryTabs from '../components/GalleryTabs';
+import GalleryWindow from '../components/GalleryWindow';
 
 export default function GalleryPage(props){
 
@@ -7,7 +7,7 @@ export default function GalleryPage(props){
 
     return (
     <div className='flexContainerColumn'>
-        <GalleryTabs></GalleryTabs>   
+        <GalleryWindow></GalleryWindow>   
     </div>
     )
 }

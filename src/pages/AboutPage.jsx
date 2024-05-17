@@ -1,15 +1,13 @@
 import { useEffect } from 'react';
-import Canvas3D from '../components/Canvas3D';
-import Socials from '../components/Socials';
+import AboutWindow from '../components/AboutWindow';
 
 export default function AboutPage(props){
 
     useEffect(() => {document.title = props.title;return () => {};}, [props.title]);
 
     return (
-    <div className='flexContainerColumn'>
-        <Canvas3D/>
-        <Socials/>
-    </div>
+        <div className='flexContainerColumn'>
+            <AboutWindow></AboutWindow>
+        </div>
     )
 }

@@ -1,3 +1,7 @@
+html {
+    overflow-y: scroll;
+  }
+
 body{
     background-image: url('./../assets/background.gif');
 }
@@ -77,4 +81,14 @@ body{
 
 .socialsBtn:hover {
     transform: scale(1.1);
+}
+
+.galleryImage{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.galleryImage:hover {
+    opacity: .75;
 }

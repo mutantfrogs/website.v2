@@ -7,6 +7,8 @@ export default function Header() {
 
   const getBannerText = () => {
     switch (location.pathname) {
+      case '/':
+        return "home";
       case '/about':
         return "about";
       case '/gallery':
@@ -22,7 +24,7 @@ export default function Header() {
     <div className='flexContainerRow' style={{ marginTop: '15px' }}>
       <div className='window' style={{ width: 650 }}>
         <div className="title-bar">
-          <div className="title-bar-text">welcome to my website!</div>
+          <div className="title-bar-text">🐸 welcome to my website!</div>
             <div className="title-bar-controls">
               <button aria-label="Help"></button>
               <button aria-label="Close"></button>
@@ -47,10 +49,12 @@ export default function Header() {
             </div>
         </div>
 
-        <div class="status-bar">
-          <p class="status-bar-field">Press X for cmd</p>
-          <p class="status-bar-field">You are visitor number #16!</p>
-          <p class="status-bar-field">CPU Usage: 14%</p>
+        <div className="status-bar">
+          <p style={{textAlign: 'center'}} className="status-bar-field">/??????</p>
+          <p style={{textAlign: 'center'}} className="status-bar-field">/??????</p>
+          <p style={{textAlign: 'center'}} className="status-bar-field">/??????</p>
+          <p style={{textAlign: 'center'}} className="status-bar-field">/??????</p>
+          <p style={{textAlign: 'center'}} className="status-bar-field">/??????</p>
         </div>
 
       </div>

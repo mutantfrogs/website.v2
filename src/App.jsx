@@ -6,7 +6,7 @@ import GalleryPage from './pages/GalleryPage';
 import BlogPage from './pages/BlogPage';
 import Header from './components/Header'
 import './styles/styles.css'
-import "xp.css/dist/XP.css";
+import "xp.css/dist/XP.css";n
 
 function App() {
     return(

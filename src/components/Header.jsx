@@ -50,11 +50,11 @@ export default function Header() {
         </div>
 
         <div className="status-bar">
-          <p style={{textAlign: 'center'}} className="status-bar-field">/??????</p>
-          <p style={{textAlign: 'center'}} className="status-bar-field">/??????</p>
-          <p style={{textAlign: 'center'}} className="status-bar-field">/??????</p>
-          <p style={{textAlign: 'center'}} className="status-bar-field">/??????</p>
-          <p style={{textAlign: 'center'}} className="status-bar-field">/??????</p>
+          <p style={{textAlign: 'center'}} className="status-bar-field">??????</p>
+          <p style={{textAlign: 'center'}} className="status-bar-field">??????</p>
+          <p style={{textAlign: 'center'}} className="status-bar-field">??????</p>
+          <p style={{textAlign: 'center'}} className="status-bar-field">??????</p>
+          <p style={{textAlign: 'center'}} className="status-bar-field">??????</p>
         </div>
 
       </div>

@@ -1,8 +1,20 @@
-{
-    "id": 1,
-    "artURL": 1,
-    "thumbURL": 1,
-    "year": 2020,
-    "nsfw": false,
-    "needCheatToView": false
-}
+[
+    {
+        "id": 1,
+        "title": "",
+        "artURL": 1,
+        "thumbURL": "src\\assets\\test250.png",
+        "year": 2023,
+        "nsfw": false,
+        "needCheatToView": false
+    },
+    {
+        "id": 2,
+        "title": "",
+        "artURL": 1,
+        "thumbURL": "src\\assets\\test250.png",
+        "year": 2022,
+        "nsfw": false,
+        "needCheatToView": false
+    }
+]

@@ -2,6 +2,9 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls } from '@react-three/drei';
 import React, { useRef, useEffect, useState } from 'react';
 import * as THREE from 'three';
+import white8x8 from '../assets/white8x8.png';
+import face8x8 from '../assets/face8x8.png';
+import qr from '../assets/qr.png';
 
 function Mesh3D() {
   const meshRef = useRef();
@@ -13,12 +16,12 @@ function Mesh3D() {
   useEffect(() => {
     const loader = new THREE.TextureLoader();
     const textures = [
-      'src\\assets\\white8x8.png', //right
-      'src\\assets\\white8x8.png', //left
-      'src\\assets\\white8x8.png', //top
-      'src\\assets\\white8x8.png', //bottom
-      'src\\assets\\face8x8.png', //front
-      'src\\assets\\qr.png', //back
+      white8x8, //right
+      white8x8, //left
+      white8x8, //top
+      white8x8, //bottom
+      face8x8, //front
+      qr, //back
     ];
 
     textureRef.current = textures.map((texturePath) => {

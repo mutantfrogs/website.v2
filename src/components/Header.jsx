@@ -8,8 +8,6 @@ export default function Header() {
   const getBannerText = () => {
     switch (location.pathname) {
       case '/':
-        return "home";
-      case '/about':
         return "about";
       case '/gallery':
         return "gallery";
@@ -35,9 +33,6 @@ export default function Header() {
           <h1 className='headerText'>{getBannerText()}</h1>
             <div className='flexContainerRow'>
               <Link to="/">
-                <button className='headerNavigationBtn'>home</button>
-                </Link>
-              <Link to="/about">
                 <button className='headerNavigationBtn'>about</button>
                 </Link>
               <Link to="/gallery">

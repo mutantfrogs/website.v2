@@ -13,10 +13,9 @@ function App() {
         <Router>
             <Header />
             <Routes>
-                <Route path="/about" element={<AboutPage title="about - mutantfrogs"/>}/>
+                <Route path="/" element={<AboutPage title="about - mutantfrogs"/>}/>
                 <Route path="/gallery" element={<GalleryPage title="gallery - mutantfrogs"/>}/>
                 <Route path="/blog" element={<BlogPage title="blog - mutantfrogs"/>}/>
-                <Route path="/" element={<HomePage title="home - mutantfrogs"/>}/>
             </Routes>
         </Router>
     )

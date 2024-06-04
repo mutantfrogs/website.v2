@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import test250 from '../assets/test250.png'
 import galleryData from './../assets/galleryData.json'
+import FullscreenImage from './FullscreenImage';
 
 export default function GalleryWindow() {
   const [selectedTab, setSelectedTab] = useState('2024');
   const [nsfwChecked, setNsfwChecked] = useState(false);
+  const [imageSrc, setimageSrc] = useState(null);
 
   const handleTabClick = (tabId) => {
     setSelectedTab(tabId);
@@ -14,9 +15,17 @@ export default function GalleryWindow() {
     setNsfwChecked(event.target.checked);
   };
 
+  const handleImageCLick = (src) => {
+    setimageSrc(src);
+  };
+
+  const handleCloseFullscreen = () => {
+    setimageSrc(null);
+  };
+
   const populateArt = (year) => {
     return galleryData.filter(item => item.year === year).map(item => (
-      <button key={item.id} className="galleryImage">
+      <button key={item.id} className="galleryImage" onClick={() => handleImageCLick(item.artURL)}>
         <img src={item.thumbURL}></img>
       </button>
     ));
@@ -76,12 +85,7 @@ export default function GalleryWindow() {
               <h2 className='tabHeader'>2024</h2>
               <input type="checkbox" id="nsfwTag" checked={nsfwChecked} onChange={handleNsfwChange}/><label htmlFor="nsfwTag">show nsfw entries? (nudity, blood, etc.)</label>
               <div id="2024" className='flexContainerRow' style={{maxWidth: 900, marginTop: '20px'}}>
-                  <button className="galleryImage"><img src={test250}></img></button>
-                  <button className="galleryImage"><img src={test250}></img></button>
-                  <button className="galleryImage"><img src={test250}></img></button>
-                  <button className="galleryImage"><img src={test250}></img></button>
-                  <button className="galleryImage"><img src={test250}></img></button>
-                  <button className="galleryImage"><img src={test250}></img></button>
+              {populateArt(2024)}
               </div>
             </article>
 
@@ -118,6 +122,7 @@ export default function GalleryWindow() {
             </article>
           </section>
         </div>
+        {imageSrc && (<FullscreenImage src={imageSrc} onClose={handleCloseFullscreen} />)}
     </div>
   );
 }

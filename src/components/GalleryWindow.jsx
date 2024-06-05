@@ -3,6 +3,74 @@ import galleryData from './../assets/galleryData.json'
 import FullscreenImage from './FullscreenImage';
 
 export default function GalleryWindow() {
+
+  const galleryData = [
+    {
+        "id": "payback",
+        "artURL": "src/assets/art/2024/payback.png",
+        "thumbURL": "src/assets/art/2024/thumbnails/payback.png",
+        "year": 2024,
+        "nsfw": false
+    },
+    {
+        "id": "grafitti",
+        "artURL": "src/assets/art/2024/grafitti.png",
+        "thumbURL": "src/assets/art/2024/thumbnails/grafitti.png",
+        "year": 2024,
+        "nsfw": false
+    },
+    {
+        "id": "twolifes",
+        "artURL": "src/assets/art/2024/twolifes.png",
+        "thumbURL": "src/assets/art/2024/thumbnails/twolifes.png",
+        "year": 2024,
+        "nsfw": false
+    },
+    {
+        "id": "april2024",
+        "artURL": "src/assets/art/2024/april2024.png",
+        "thumbURL": "src/assets/art/2024/thumbnails/april2024.png",
+        "year": 2024,
+        "nsfw": false
+    },
+    {
+        "id": "march2024",
+        "artURL": "src/assets/art/2024/march2024.png",
+        "thumbURL": "src/assets/art/2024/thumbnails/march2024.png",
+        "year": 2024,
+        "nsfw": false
+    },
+    {
+        "id": "feburary2024",
+        "artURL": "src/assets/art/2024/feburary2024.png",
+        "thumbURL": "src/assets/art/2024/thumbnails/feburary2024.png",
+        "year": 2024,
+        "nsfw": false
+    },
+    {
+        "id": "mishka",
+        "artURL": "src/assets/art/2024/mishka.png",
+        "thumbURL": "src/assets/art/2024/thumbnails/mishka.png",
+        "year": 2024,
+        "nsfw": false
+    },
+    {
+        "id": "birthofjulia",
+        "artURL": "src/assets/art/2024/birthofjulia.png",
+        "thumbURL": "src/assets/art/2024/thumbnails/birthofjulia.png",
+        "year": 2024,
+        "nsfw": false
+    },
+    {
+        "id": "january2024",
+        "artURL": "src/assets/art/2024/january2024.png",
+        "thumbURL": "src/assets/art/2024/thumbnails/january2024.png",
+        "year": 2024,
+        "nsfw": false
+    }
+
+]
+
   const [selectedTab, setSelectedTab] = useState('2024');
   const [nsfwChecked, setNsfwChecked] = useState(false);
   const [imageSrc, setimageSrc] = useState(null);

@@ -61,6 +61,13 @@
         "thumbURL": "art/2024/thumbnails/january2024.png",
         "year": 2024,
         "nsfw": false
+    },
+    {
+        "id": "may2024",
+        "artURL": "art/2024/may2024.png",
+        "thumbURL": "art/2024/thumbnails/may2024.png",
+        "year": 2024,
+        "nsfw": false
     }
 
 ]

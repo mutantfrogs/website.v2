@@ -27,7 +27,7 @@ export default function GalleryWindow() {
   const populateArt = (year) => {
     return galleryData.filter(item => item.year === year).map(item => (
       <button key={item.id} className="galleryImage" onClick={() => handleImageCLick(item.artURL)}>
-        <img src={item.thumbURL}></img>
+        <img src={require(`${item.thumbURL}`).default}></img>
       </button>
     ));
   }

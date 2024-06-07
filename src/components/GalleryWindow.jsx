@@ -3,10 +3,12 @@ import galleryData from './../assets/galleryData.json'
 import FullscreenImage from './FullscreenImage';
 
 export default function GalleryWindow() {
-  
+
   const [selectedTab, setSelectedTab] = useState('2024');
   const [nsfwChecked, setNsfwChecked] = useState(false);
   const [imageSrc, setimageSrc] = useState(null);
+
+  const imageUrl = new URL(imageSrc, import.meta.url).href
 
   const handleTabClick = (tabId) => {
     setSelectedTab(tabId);
@@ -26,7 +28,7 @@ export default function GalleryWindow() {
 
   const populateArt = (year) => {
     return galleryData.filter(item => item.year === year).map(item => (
-      <button key={item.id} className="galleryImage" onClick={() => handleImageCLick(item.artURL)}>
+      <button key={item.id} className="galleryImage" onClick={() => handleImageCLick((item.artURL), import.meta.url).href}>
         <img src={item.thumbURL}></img>
       </button>
     ));

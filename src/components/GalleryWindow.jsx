@@ -8,8 +8,6 @@ export default function GalleryWindow() {
   const [nsfwChecked, setNsfwChecked] = useState(false);
   const [imageSrc, setimageSrc] = useState(null);
 
-  const imageUrl = new URL(imageSrc, import.meta.url).href
-
   const handleTabClick = (tabId) => {
     setSelectedTab(tabId);
   };
@@ -125,7 +123,7 @@ export default function GalleryWindow() {
             </article>
           </section>
         </div>
-        {imageSrc && (<FullscreenImage src={imageUrl} onClose={handleCloseFullscreen} />)}
+        {imageSrc && (<FullscreenImage src={imageSrc} onClose={handleCloseFullscreen} />)}
     </div>
   );
 }

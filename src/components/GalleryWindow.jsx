@@ -28,7 +28,7 @@ export default function GalleryWindow() {
 
   const populateArt = (year) => {
     return galleryData.filter(item => item.year === year).map(item => (
-      <button key={item.id} className="galleryImage" onClick={() => handleImageCLick((item.artURL), import.meta.url).href}>
+      <button key={item.id} className="galleryImage" onClick={() => handleImageCLick(item.artURL)}>
         <img src={item.thumbURL}></img>
       </button>
     ));
@@ -125,7 +125,7 @@ export default function GalleryWindow() {
             </article>
           </section>
         </div>
-        {imageSrc && (<FullscreenImage src={imageSrc} onClose={handleCloseFullscreen} />)}
+        {imageSrc && (<FullscreenImage src={imageUrl} onClose={handleCloseFullscreen} />)}
     </div>
   );
 }

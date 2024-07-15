@@ -35,7 +35,7 @@ export default function GalleryWindow() {
   return (
     <div className='window' style={{ width: 1000, marginTop: '60px', marginBottom: '60px' }}>
         <div className="title-bar">
-          <div className="title-bar-text">🎨 untitled - Paint</div>
+          <div className="title-bar-text">📁 file explorer</div>
         </div>
         <div className='flexContainerRow'>
           <section className="tabs" style={{ maxWidth: '930px', minWidth: '930px', marginTop: '20px'}}>

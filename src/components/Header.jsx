@@ -45,11 +45,7 @@ export default function Header() {
         </div>
 
         <div className="status-bar">
-          <p style={{textAlign: 'center'}} className="status-bar-field">??????</p>
-          <p style={{textAlign: 'center'}} className="status-bar-field">??????</p>
-          <p style={{textAlign: 'center'}} className="status-bar-field">??????</p>
-          <p style={{textAlign: 'center'}} className="status-bar-field">??????</p>
-          <p style={{textAlign: 'center'}} className="status-bar-field">??????</p>
+          <p style={{textAlign: 'center'}} className="status-bar-field">be yourself no matter what!</p>
         </div>
 
       </div>

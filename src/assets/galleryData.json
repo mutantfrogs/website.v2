@@ -1,5 +1,35 @@
 [
     {
+        "id": "meettheartist",
+        "artURL": "art/2024/meettheartist.png",
+        "thumbURL": "art/2024/thumbnails/meettheartist.png",
+        "year": 2024,
+        "nsfw": false
+    },{
+        "id": "welcometospace",
+        "artURL": "art/2024/welcometospace.png",
+        "thumbURL": "art/2024/thumbnails/welcometospace.png",
+        "year": 2024,
+        "nsfw": false
+    },{
+        "id": "june2024",
+        "artURL": "art/2024/june2024.png",
+        "thumbURL": "art/2024/thumbnails/june2024.png",
+        "year": 2024,
+        "nsfw": false
+    },{
+        "id": "whiteboard",
+        "artURL": "art/2024/whiteboard.png",
+        "thumbURL": "art/2024/thumbnails/whiteboard.png",
+        "year": 2024,
+        "nsfw": false
+    },{
+        "id": "cowlady",
+        "artURL": "art/2024/cowlady.png",
+        "thumbURL": "art/2024/thumbnails/cowlady.png",
+        "year": 2024,
+        "nsfw": false
+    },{
         "id": "payback",
         "artURL": "art/2024/payback.png",
         "thumbURL": "art/2024/thumbnails/payback.png",

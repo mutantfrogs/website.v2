@@ -6,6 +6,11 @@ body{
     background-image: url('./../assets/background.gif');
 }
 
+.windowMargin{
+    margin-top: 60px; 
+    margin-bottom: 60px;
+}
+
 .urgentHeader{
     color: red;
     font-size: 96px;
@@ -73,6 +78,27 @@ body{
     margin-bottom: 30px;
 }
 
+.aboutWindow{
+    max-width: 800px;
+}
+
+.aboutArticle{
+    margin-Top: 20px;
+    margin-Bottom:20px; 
+    max-Width:660px;
+}
+
+@media only screen 
+and (max-device-width: 1000px){
+    .aboutWindow{
+        min-width: 95%;
+    }
+
+    .aboutArticle{
+        max-Width:85%;
+    }
+}
+
 .socialsBtn{
     max-height: 40px;
     margin-left: 20px;
@@ -108,3 +134,36 @@ body{
     max-height: 800px;
     max-width: 1900px;
 }
+
+.newWindow{
+    width: 1000px; 
+}
+
+#gallerySection{
+    max-Width: 930px; 
+    min-Width: 930px; 
+    margin-Top: 20px;
+}
+
+#galleryYear{
+    max-Width: 900px;
+    margin-Top: 20px;
+}
+
+
+@media only screen 
+and (max-device-width: 1000px)
+{ 
+    .newWindow{
+    width: 95%; 
+    }
+
+    #gallerySection{
+        max-Width: 90%; 
+        min-Width: 100px; 
+    }
+
+    #galleryYear{
+        max-Width: 90%;
+    }
+} 

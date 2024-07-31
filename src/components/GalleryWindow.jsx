@@ -33,12 +33,12 @@ export default function GalleryWindow() {
   }
 
   return (
-    <div className='window' style={{ width: 1000, marginTop: '60px', marginBottom: '60px' }}>
+    <div className='window windowMargin newWindow'>
         <div className="title-bar">
           <div className="title-bar-text">📁 file explorer</div>
         </div>
         <div className='flexContainerRow'>
-          <section className="tabs" style={{ maxWidth: '930px', minWidth: '930px', marginTop: '20px'}}>
+          <section className="tabs" id='gallerySection'>
         <menu role="tablist" aria-label="Sample Tabs">
           <button
             role="tab"
@@ -82,42 +82,42 @@ export default function GalleryWindow() {
           </button>
         </menu>
 
-            <article role="tabpanel" id="2024" hidden={selectedTab !== '2024'}>
+            <article role="tabpanel" hidden={selectedTab !== '2024'}>
               <h2 className='tabHeader'>2024</h2>
               {/*<input type="checkbox" id="nsfwTag" checked={nsfwChecked} onChange={handleNsfwChange}/><label htmlFor="nsfwTag">show nsfw entries? (nudity, blood, etc.)</label>*/}
-              <div id="2024" className='flexContainerRow' style={{maxWidth: 900, marginTop: '20px'}}>
+              <div id="2024" className='flexContainerRow galleryYear'>
               {populateArt(2024)}
               </div>
             </article>
 
-            <article role="tabpanel" id="2023" hidden={selectedTab !== '2023'}>
+            <article role="tabpanel" hidden={selectedTab !== '2023'}>
               <h2 className='tabHeader'>2023</h2>
                {/*<input type="checkbox" id="nsfwTag" checked={nsfwChecked} onChange={handleNsfwChange}/><label htmlFor="nsfwTag">show nsfw entries? (nudity, blood, etc.)</label>*/}
-              <div id="2023" className='flexContainerRow' style={{maxWidth: 900, marginTop: '20px'}}>
+              <div id="2023" className='flexContainerRow galleryYear'>
                   {populateArt(2023)}
               </div>
             </article>
 
-            <article role="tabpanel" id="2022" hidden={selectedTab !== '2022'}>
+            <article role="tabpanel" hidden={selectedTab !== '2022'}>
               <h2 className='tabHeader'>2022</h2>
               {/*<input type="checkbox" id="nsfwTag" checked={nsfwChecked} onChange={handleNsfwChange}/><label htmlFor="nsfwTag">show nsfw entries? (nudity, blood, etc.)</label>*/}
-              <div id="2023" className='flexContainerRow' style={{maxWidth: 900, marginTop: '20px'}}>
+              <div id="2023" className='flexContainerRow galleryYear'>
                   {populateArt(2022)}
               </div>
             </article>
 
-            <article role="tabpanel" id="2021" hidden={selectedTab !== '2021'}>
+            <article role="tabpanel" hidden={selectedTab !== '2021'}>
               <h2 className='tabHeader'>2021</h2>
               {/*<input type="checkbox" id="nsfwTag" checked={nsfwChecked} onChange={handleNsfwChange}/><label htmlFor="nsfwTag">show nsfw entries? (nudity, blood, etc.)</label>*/}
-              <div id="2023" className='flexContainerRow' style={{maxWidth: 900, marginTop: '20px'}}>
+              <div id="2023" className='flexContainerRow galleryYear'>
                   {populateArt(2021)}
               </div>
             </article>
 
-            <article role="tabpanel" id="2020" hidden={selectedTab !== '2020'}>
+            <article role="tabpanel" hidden={selectedTab !== '2020'}>
               <h2 className='tabHeader'>2020</h2>
                {/*<input type="checkbox" id="nsfwTag" checked={nsfwChecked} onChange={handleNsfwChange}/><label htmlFor="nsfwTag">show nsfw entries? (nudity, blood, etc.)</label>*/}
-              <div id="2023" className='flexContainerRow' style={{maxWidth: 900, marginTop: '20px'}}>
+              <div id="2023" className='flexContainerRow galleryYear'>
                   {populateArt(2020)}
               </div>
             </article>

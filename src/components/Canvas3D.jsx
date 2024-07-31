@@ -70,7 +70,7 @@ export default function Canvas3D() {
   return (
     <div>
       <Canvas
-        style={{ width: '16vw', height: '32vh', marginLeft: 'auto', marginRight: 'auto' }}
+        style={{ width: '32vw', height: '32vh', marginLeft: 'auto', marginRight: 'auto' }}
         orthographic
         camera={{ zoom: 100, position: [0, 0, 100] }}
       >

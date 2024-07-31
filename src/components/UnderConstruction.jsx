@@ -1,7 +1,7 @@
 export default function UnderConstruction() {
 
   return (
-    <div className='flexContainerRow' style={{ marginTop: '60px' }}>
+    <div className='flexContainerRow windowMargin'>
       <div className='window' style={{ width: 350 }}>
         <div className="title-bar">
           <div className="title-bar-text">❌ error</div>

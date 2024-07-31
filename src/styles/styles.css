@@ -166,4 +166,9 @@ and (max-device-width: 1000px)
     #galleryYear{
         max-Width: 90%;
     }
+
+    .fullscreenImage{
+        max-height: 100%;
+        max-width: 100%;
+    }
 } 

@@ -98,6 +98,111 @@
         "thumbURL": "art/2024/thumbnails/may2024.png",
         "year": 2024,
         "nsfw": false
+    },
+    {
+        "id": "april2023",
+        "artURL": "art/2023/april2023.png",
+        "thumbURL": "art/2023/thumbnails/april2023.png",
+        "year": 2023,
+        "nsfw": false
+    },
+    {
+        "id": "dead",
+        "artURL": "art/2023/dead.png",
+        "thumbURL": "art/2023/thumbnails/dead.png",
+        "year": 2023,
+        "nsfw": false
+    },
+    {
+        "id": "dioxideDTIYS",
+        "artURL": "art/2023/dioxideDTIYS.png",
+        "thumbURL": "art/2023/thumbnails/dioxideDTIYS.png",
+        "year": 2023,
+        "nsfw": false
+    },
+    {
+        "id": "eel",
+        "artURL": "art/2023/eel.png",
+        "thumbURL": "art/2023/thumbnails/eel.png",
+        "year": 2023,
+        "nsfw": false
+    },
+    {
+        "id": "feburary2023",
+        "artURL": "art/2023/feburary2023.png",
+        "thumbURL": "art/2023/thumbnails/feburary2023.png",
+        "year": 2023,
+        "nsfw": false
+    },
+    {
+        "id": "march2023",
+        "artURL": "art/2023/march2023.png",
+        "thumbURL": "art/2023/thumbnails/march2023.png",
+        "year": 2023,
+        "nsfw": false
+    },
+    {
+        "id": "june2023",
+        "artURL": "art/2023/june2023.png",
+        "thumbURL": "art/2023/thumbnails/june2023.png",
+        "year": 2023,
+        "nsfw": false
+    },
+    {
+        "id": "may2023",
+        "artURL": "art/2023/may2023.png",
+        "thumbURL": "art/2023/thumbnails/may2023.png",
+        "year": 2023,
+        "nsfw": false
+    },
+    {
+        "id": "mcfaces",
+        "artURL": "art/2023/mcfaces.png",
+        "thumbURL": "art/2023/thumbnails/mcfaces.png",
+        "year": 2023,
+        "nsfw": false
+    },
+    {
+        "id": "mcmelt",
+        "artURL": "art/2023/mcmelt.png",
+        "thumbURL": "art/2023/thumbnails/mcmelt.png",
+        "year": 2023,
+        "nsfw": false
+    },
+    {
+        "id": "mctrolling",
+        "artURL": "art/2023/mctrolling.png",
+        "thumbURL": "art/2023/thumbnails/mctrolling.png",
+        "year": 2023,
+        "nsfw": false
+    },
+    {
+        "id": "november2023",
+        "artURL": "art/2023/november2023.png",
+        "thumbURL": "art/2023/thumbnails/november2023.png",
+        "year": 2023,
+        "nsfw": false
+    },
+    {
+        "id": "october2023",
+        "artURL": "art/2023/october2023.png",
+        "thumbURL": "art/2023/thumbnails/october2023.png",
+        "year": 2023,
+        "nsfw": false
+    },
+    {
+        "id": "sadpoint",
+        "artURL": "art/2023/sadpoint.png",
+        "thumbURL": "art/2023/thumbnails/sadpoint.png",
+        "year": 2023,
+        "nsfw": false
+    },
+    {
+        "id": "september2023",
+        "artURL": "art/2023/september2023.png",
+        "thumbURL": "art/2023/thumbnails/september2023.png",
+        "year": 2023,
+        "nsfw": false
     }
 
 ]

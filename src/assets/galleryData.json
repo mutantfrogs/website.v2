@@ -203,6 +203,195 @@
         "thumbURL": "art/2023/thumbnails/september2023.png",
         "year": 2023,
         "nsfw": false
+    },
+    {
+        "id": "amon",
+        "artURL": "art/2022/amon.png",
+        "thumbURL": "art/2022/thumbnails/amon.png",
+        "year": 2022,
+        "nsfw": false
+    },
+    {
+        "id": "blackout",
+        "artURL": "art/2022/blackout.png",
+        "thumbURL": "art/2022/thumbnails/blackout.png",
+        "year": 2022,
+        "nsfw": false
+    },
+    {
+        "id": "board",
+        "artURL": "art/2022/board.jpg",
+        "thumbURL": "art/2022/thumbnails/board.jpg",
+        "year": 2022,
+        "nsfw": false
+    },
+    {
+        "id": "clown",
+        "artURL": "art/2022/clown.png",
+        "thumbURL": "art/2022/thumbnails/clown.png",
+        "year": 2022,
+        "nsfw": false
+    },
+    {
+        "id": "feburary2022",
+        "artURL": "art/2022/feburary2022.png",
+        "thumbURL": "art/2022/thumbnails/feburary2022.png",
+        "year": 2022,
+        "nsfw": false
+    },
+    {
+        "id": "fursona",
+        "artURL": "art/2022/fursona.png",
+        "thumbURL": "art/2022/thumbnails/fursona.png",
+        "year": 2022,
+        "nsfw": false
+    },
+    {
+        "id": "godzilla",
+        "artURL": "art/2022/godzilla.png",
+        "thumbURL": "art/2022/thumbnails/godzilla.png",
+        "year": 2022,
+        "nsfw": false
+    },
+    {
+        "id": "headshot",
+        "artURL": "art/2022/headshot.png",
+        "thumbURL": "art/2022/thumbnails/headshot.png",
+        "year": 2022,
+        "nsfw": false
+    },
+    {
+        "id": "january2022",
+        "artURL": "art/2022/january2022.png",
+        "thumbURL": "art/2022/thumbnails/january2022.png",
+        "year": 2022,
+        "nsfw": false
+    },
+    {
+        "id": "july2022",
+        "artURL": "art/2022/july2022.png",
+        "thumbURL": "art/2022/thumbnails/july2022.png",
+        "year": 2022,
+        "nsfw": false
+    },
+    {
+        "id": "june2022",
+        "artURL": "art/2022/june2022.png",
+        "thumbURL": "art/2022/thumbnails/june2022.png",
+        "year": 2022,
+        "nsfw": false
+    },
+    {
+        "id": "leaf",
+        "artURL": "art/2022/leaf.jpg",
+        "thumbURL": "art/2022/thumbnails/leaf.jpg",
+        "year": 2022,
+        "nsfw": false
+    },
+    {
+        "id": "march2022",
+        "artURL": "art/2022/march2022.png",
+        "thumbURL": "art/2022/thumbnails/march2022.png",
+        "year": 2022,
+        "nsfw": false
+    },
+    {
+        "id": "may2022",
+        "artURL": "art/2022/may2022.png",
+        "thumbURL": "art/2022/thumbnails/may2022.png",
+        "year": 2022,
+        "nsfw": false
+    },
+    {
+        "id": "misc2022",
+        "artURL": "art/2022/misc2022.png",
+        "thumbURL": "art/2022/thumbnails/misc2022.png",
+        "year": 2022,
+        "nsfw": false
+    },
+    {
+        "id": "negativespace",
+        "artURL": "art/2022/negativespace.jpg",
+        "thumbURL": "art/2022/thumbnails/negativespace.jpg",
+        "year": 2022,
+        "nsfw": false
+    },
+    {
+        "id": "nineten",
+        "artURL": "art/2022/nineten.png",
+        "thumbURL": "art/2022/thumbnails/nineten.png",
+        "year": 2022,
+        "nsfw": false
+    },
+    {
+        "id": "paper2022",
+        "artURL": "art/2022/paper2022.jpg",
+        "thumbURL": "art/2022/thumbnails/paper2022.jpg",
+        "year": 2022,
+        "nsfw": false
+    },
+    {
+        "id": "paperelephant",
+        "artURL": "art/2022/paperelephant.png",
+        "thumbURL": "art/2022/thumbnails/paperelephant.png",
+        "year": 2022,
+        "nsfw": false
+    },
+    {
+        "id": "selfportrait",
+        "artURL": "art/2022/selfportrait.jpg",
+        "thumbURL": "art/2022/thumbnails/selfportrait.jpg",
+        "year": 2022,
+        "nsfw": false
+    },
+    {
+        "id": "selfportrait2",
+        "artURL": "art/2022/selfportrait2.jpg",
+        "thumbURL": "art/2022/thumbnails/selfportrait2.jpg",
+        "year": 2022,
+        "nsfw": false
+    },
+    {
+        "id": "selfportrait3",
+        "artURL": "art/2022/selfportrait3.jpg",
+        "thumbURL": "art/2022/thumbnails/selfportrait3.jpg",
+        "year": 2022,
+        "nsfw": false
+    },
+    {
+        "id": "shower",
+        "artURL": "art/2022/shower.png",
+        "thumbURL": "art/2022/thumbnails/shower.png",
+        "year": 2022,
+        "nsfw": false
+    },
+    {
+        "id": "skull",
+        "artURL": "art/2022/skull.jpg",
+        "thumbURL": "art/2022/thumbnails/skull.jpg",
+        "year": 2022,
+        "nsfw": false
+    },
+    {
+        "id": "stilllife",
+        "artURL": "art/2022/stilllife.jpg",
+        "thumbURL": "art/2022/thumbnails/stilllife.jpg",
+        "year": 2022,
+        "nsfw": false
+    },
+    {
+        "id": "walkingcity",
+        "artURL": "art/2022/walkingcity.png",
+        "thumbURL": "art/2022/thumbnails/walkingcity.png",
+        "year": 2022,
+        "nsfw": false
+    },
+    {
+        "id": "xphill",
+        "artURL": "art/2022/xphill.png",
+        "thumbURL": "art/2022/thumbnails/xphill.png",
+        "year": 2022,
+        "nsfw": false
     }
 
 ]

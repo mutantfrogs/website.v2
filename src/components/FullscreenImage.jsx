@@ -8,7 +8,7 @@ export default function FullscreenImage({ src, onClose }){
 
     return(
       <div className='fullscreenBackground' onClick={closeFullscreenByClick}>
-        <div className='flexContainerRow' id="fullScreenContainer">
+        <div className='flexContainerRow' id="fullScreenContainer" style={{ height: '100%'}}>
           <div className='window'>
             <div className="title-bar">
             <div className="title-bar-text">🌎 {fileName} - Windows Picture Viewer</div>

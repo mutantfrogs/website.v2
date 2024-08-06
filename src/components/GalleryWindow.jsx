@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import galleryData from './../assets/galleryData.json'
 import FullscreenImage from './FullscreenImage';
+import { useNavigate, useParams } from 'react-router-dom';
 
 export default function GalleryWindow() {
 
   const [selectedTab, setSelectedTab] = useState('2024');
-  const [nsfwChecked, setNsfwChecked] = useState(false);
   const [imageSrc, setimageSrc] = useState(null);
 
   const handleTabClick = (tabId) => {
@@ -84,7 +84,6 @@ export default function GalleryWindow() {
 
             <article role="tabpanel" hidden={selectedTab !== '2024'}>
               <h2 className='tabHeader'>2024</h2>
-              {/*<input type="checkbox" id="nsfwTag" checked={nsfwChecked} onChange={handleNsfwChange}/><label htmlFor="nsfwTag">show nsfw entries? (nudity, blood, etc.)</label>*/}
               <div id="2024" className='flexContainerRow galleryYear'>
               {populateArt(2024)}
               </div>
@@ -92,7 +91,6 @@ export default function GalleryWindow() {
 
             <article role="tabpanel" hidden={selectedTab !== '2023'}>
               <h2 className='tabHeader'>2023</h2>
-               {/*<input type="checkbox" id="nsfwTag" checked={nsfwChecked} onChange={handleNsfwChange}/><label htmlFor="nsfwTag">show nsfw entries? (nudity, blood, etc.)</label>*/}
               <div id="2023" className='flexContainerRow galleryYear'>
                   {populateArt(2023)}
               </div>
@@ -100,7 +98,6 @@ export default function GalleryWindow() {
 
             <article role="tabpanel" hidden={selectedTab !== '2022'}>
               <h2 className='tabHeader'>2022</h2>
-              {/*<input type="checkbox" id="nsfwTag" checked={nsfwChecked} onChange={handleNsfwChange}/><label htmlFor="nsfwTag">show nsfw entries? (nudity, blood, etc.)</label>*/}
               <div id="2023" className='flexContainerRow galleryYear'>
                   {populateArt(2022)}
               </div>
@@ -108,7 +105,6 @@ export default function GalleryWindow() {
 
             <article role="tabpanel" hidden={selectedTab !== '2021'}>
               <h2 className='tabHeader'>2021</h2>
-              {/*<input type="checkbox" id="nsfwTag" checked={nsfwChecked} onChange={handleNsfwChange}/><label htmlFor="nsfwTag">show nsfw entries? (nudity, blood, etc.)</label>*/}
               <div id="2023" className='flexContainerRow galleryYear'>
                   {populateArt(2021)}
               </div>
@@ -116,7 +112,6 @@ export default function GalleryWindow() {
 
             <article role="tabpanel" hidden={selectedTab !== '2020'}>
               <h2 className='tabHeader'>2020</h2>
-               {/*<input type="checkbox" id="nsfwTag" checked={nsfwChecked} onChange={handleNsfwChange}/><label htmlFor="nsfwTag">show nsfw entries? (nudity, blood, etc.)</label>*/}
               <div id="2023" className='flexContainerRow galleryYear'>
                   {populateArt(2020)}
               </div>

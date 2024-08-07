@@ -392,6 +392,175 @@
         "thumbURL": "art/2022/thumbnails/xphill.png",
         "year": 2022,
         "nsfw": false
+    },
+    {
+        "id": "abduction",
+        "artURL": "art/2021/abduction.png",
+        "thumbURL": "art/2021/thumbnails/abduction.png",
+        "year": 2021,
+        "nsfw": false
+    },
+    {
+        "id": "april2021",
+        "artURL": "art/2021/april2021.png",
+        "thumbURL": "art/2021/thumbnails/april2021.png",
+        "year": 2021,
+        "nsfw": false
+    },
+    {
+        "id": "bazelgeuse",
+        "artURL": "art/2021/bazelgeuse.png",
+        "thumbURL": "art/2021/thumbnails/bazelgeuse.png",
+        "year": 2021,
+        "nsfw": false
+    },
+    {
+        "id": "crow",
+        "artURL": "art/2021/crow.png",
+        "thumbURL": "art/2021/thumbnails/crow.png",
+        "year": 2021,
+        "nsfw": false
+    },
+    {
+        "id": "crow2",
+        "artURL": "art/2021/crow2.png",
+        "thumbURL": "art/2021/thumbnails/crow2.png",
+        "year": 2021,
+        "nsfw": false
+    },
+    {
+        "id": "crow3",
+        "artURL": "art/2021/crow3.png",
+        "thumbURL": "art/2021/thumbnails/crow3.png",
+        "year": 2021,
+        "nsfw": false
+    },
+    {
+        "id": "dangeko",
+        "artURL": "art/2021/dangeko.png",
+        "thumbURL": "art/2021/thumbnails/dangeko.png",
+        "year": 2021,
+        "nsfw": false
+    },
+    {
+        "id": "fall2021",
+        "artURL": "art/2021/fall2021.png",
+        "thumbURL": "art/2021/thumbnails/fall2021.png",
+        "year": 2021,
+        "nsfw": false
+    },
+    {
+        "id": "flcl",
+        "artURL": "art/2021/flcl.png",
+        "thumbURL": "art/2021/thumbnails/flcl.png",
+        "year": 2021,
+        "nsfw": false
+    },
+    {
+        "id": "goodbyecat",
+        "artURL": "art/2021/goodbyecat.png",
+        "thumbURL": "art/2021/thumbnails/goodbyecat.png",
+        "year": 2021,
+        "nsfw": false
+    },
+    {
+        "id": "herja",
+        "artURL": "art/2021/herja.png",
+        "thumbURL": "art/2021/thumbnails/herja.png",
+        "year": 2021,
+        "nsfw": false
+    },
+    {
+        "id": "joker",
+        "artURL": "art/2021/joker.png",
+        "thumbURL": "art/2021/thumbnails/joker.png",
+        "year": 2021,
+        "nsfw": false
+    },
+    {
+        "id": "july2021",
+        "artURL": "art/2021/july2021.png",
+        "thumbURL": "art/2021/thumbnails/july2021.png",
+        "year": 2021,
+        "nsfw": false
+    },
+    {
+        "id": "june2021",
+        "artURL": "art/2021/june2021.png",
+        "thumbURL": "art/2021/thumbnails/june2021.png",
+        "year": 2021,
+        "nsfw": false
+    },
+    {
+        "id": "mcjungle",
+        "artURL": "art/2021/mcjungle.png",
+        "thumbURL": "art/2021/thumbnails/mcjungle.png",
+        "year": 2021,
+        "nsfw": false
+    },
+    {
+        "id": "nether",
+        "artURL": "art/2021/nether.png",
+        "thumbURL": "art/2021/thumbnails/nether.png",
+        "year": 2021,
+        "nsfw": false
+    },
+    {
+        "id": "newstyle",
+        "artURL": "art/2021/newstyle.jpg",
+        "thumbURL": "art/2021/thumbnails/newstyle.png",
+        "year": 2021,
+        "nsfw": false
+    },
+    {
+        "id": "nostalgiacritic",
+        "artURL": "art/2021/nostalgiacritic.png",
+        "thumbURL": "art/2021/thumbnails/nostalgiacritic.png",
+        "year": 2021,
+        "nsfw": false
+    },
+    {
+        "id": "oc",
+        "artURL": "art/2021/oc.png",
+        "thumbURL": "art/2021/thumbnails/oc.png",
+        "year": 2021,
+        "nsfw": false
+    },
+    {
+        "id": "paper2021",
+        "artURL": "art/2021/paper2021.jpg",
+        "thumbURL": "art/2021/thumbnails/paper2021.png",
+        "year": 2021,
+        "nsfw": false
+    },
+    {
+        "id": "redsky",
+        "artURL": "art/2021/redsky.png",
+        "thumbURL": "art/2021/thumbnails/redsky.png",
+        "year": 2021,
+        "nsfw": false
+    },
+    {
+        "id": "seamonster",
+        "artURL": "art/2021/seamonster.jpg",
+        "thumbURL": "art/2021/thumbnails/seamonster.png",
+        "year": 2021,
+        "nsfw": false
+    },
+    {
+        "id": "spring2021",
+        "artURL": "art/2021/spring2021.png",
+        "thumbURL": "art/2021/thumbnails/spring2021.png",
+        "year": 2021,
+        "nsfw": false
+    },
+    {
+        "id": "winter2021",
+        "artURL": "art/2021/winter2021.png",
+        "thumbURL": "art/2021/thumbnails/winter2021.png",
+        "year": 2021,
+        "nsfw": false
     }
+
 
 ]

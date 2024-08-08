@@ -12,15 +12,14 @@ export default function AboutWindow() {
 
           <div className='flexContainerColumn'>
                 <article role="tabpanel" className='aboutArticle'>
-                    <p style={{fontSize: '14px', textAlign:'center', marginBottom:'20px'}}>
-                        hello! my name is <b>jake/julia (they/them)</b> but i also go by mutantfrogs online. i'm a 23 year old nonbinary artist, programmer, and rhythm gamer. i love creating art and learning new skills, so i made this website to be a hub of my creations. from illustrations to writings to minecraft mods. if I made it, you can probably find it here! thank you for visiting and i hope you enjoy browsing my site! 
+                    <p style={{fontSize: '14px', textAlign:'center', marginBottom:'10px'}}>
+                        hello! my name is <b>jake/julia (they/them)</b> but i also go by <b>mutantfrogs</b> online. i'm a 23 year old nonbinary artist, programmer, and aspiring jack of all trades. i love minecraft, y2k aesthetics, old internet, and touching grass. this website is mostly a hub for my creations as i don't like posting to social media.<br/>thank you for visiting and enjoy your stay!<br/>
                         <br/>
-                        <br/>
-                        <b>contact: themutantfrogs@gmail.com</b>
-                    </p>
-                    
+                        <b>discord: @mutantfrogs</b>
+                    </p>                   
                     <Canvas3D></Canvas3D>
                     <Socials></Socials>
+                    <p style={{fontSize: '14px', textAlign:'center'}}></p>
                 </article>
           </div>
         </div>

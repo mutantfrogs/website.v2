@@ -560,7 +560,12 @@
         "thumbURL": "art/2021/thumbnails/winter2021.png",
         "year": 2021,
         "nsfw": false
+    },
+    {
+        "id": "toolz",
+        "artURL": "art/2021/toolz.png",
+        "thumbURL": "art/2021/thumbnails/toolz.png",
+        "year": 2021,
+        "nsfw": false 
     }
-
-
 ]

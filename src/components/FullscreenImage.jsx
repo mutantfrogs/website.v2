@@ -38,8 +38,8 @@ export default function FullscreenImage({ src, onClose }){
             <div className='flexContainerColumn'>
                 <img className="fullscreenImage" src={currentSrc}></img>
                 <div className='flexContainerRow'>
-                  <button onClick={previousImage} className='galleryArrows' style={{left: '20px'}}>previous</button>
-                  <button onClick={nextImage} className='galleryArrows' style={{ right: '20px' }}>next</button>
+                  <button onClick={previousImage} className='galleryArrows' style={{left: '20px'}}>previous<br/>{'<-----'}</button>
+                  <button onClick={nextImage} className='galleryArrows' style={{ right: '20px' }}>next<br/>{'----->'}</button>
                 </div>
             </div>
           </div>

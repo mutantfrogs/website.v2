@@ -13,7 +13,7 @@ function App() {
             <Header />
             <Routes>
                 <Route path="/" element={<AboutPage title="about - mutantfrogs"/>}/>
-                <Route path="/gallery" element={<GalleryPage title="gallery - mutantfrogs"/>}/>
+                <Route path="/explore" element={<GalleryPage title="explore - mutantfrogs"/>}/>
                 <Route path="/blog" element={<BlogPage title="blog - mutantfrogs"/>}/>
             </Routes>
         </Router>

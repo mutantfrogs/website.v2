@@ -5,7 +5,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 
 export default function GalleryWindow() {
 
-  const [selectedTab, setSelectedTab] = useState('2024');
+  const [selectedTab, setSelectedTab] = useState('art');
   const [imageSrc, setimageSrc] = useState(null);
 
   const handleTabClick = (tabId) => {
@@ -42,77 +42,46 @@ export default function GalleryWindow() {
         <menu role="tablist" aria-label="Sample Tabs">
           <button
             role="tab"
-            aria-selected={selectedTab === '2024'}
-            aria-controls="2024"
-            onClick={() => handleTabClick('2024')}
+            aria-selected={selectedTab === 'art'}
+            aria-controls="art"
+            onClick={() => handleTabClick('art')}
           >
-            2024
+            drawings
           </button>
           <button
             role="tab"
-            aria-selected={selectedTab === '2023'}
-            aria-controls="2023"
-            onClick={() => handleTabClick('2023')}
+            aria-selected={selectedTab === 'more'}
+            aria-controls="more"
+            onClick={() => handleTabClick('more')}
           >
-            2023
-          </button>
-          <button
-            role="tab"
-            aria-selected={selectedTab === '2022'}
-            aria-controls="2022"
-            onClick={() => handleTabClick('2022')}
-          >
-            2022
-          </button>
-          <button
-            role="tab"
-            aria-selected={selectedTab === '2021'}
-            aria-controls="2021"
-            onClick={() => handleTabClick('2021')}
-          >
-            2021
-          </button>
-          <button
-            role="tab"
-            aria-selected={selectedTab === '2020'}
-            aria-controls="2020"
-            onClick={() => handleTabClick('2020')}
-          >
-            2020
+            more coming soon!
           </button>
         </menu>
 
-            <article role="tabpanel" hidden={selectedTab !== '2024'}>
+            <article role="tabpanel" hidden={selectedTab !== 'art'}>
               <h2 className='tabHeader'>2024</h2>
+              <hr/>
               <div id="2024" className='flexContainerRow galleryYear'>
               {populateArt(2024)}
               </div>
-            </article>
-
-            <article role="tabpanel" hidden={selectedTab !== '2023'}>
               <h2 className='tabHeader'>2023</h2>
+              <hr/>
               <div id="2023" className='flexContainerRow galleryYear'>
                   {populateArt(2023)}
               </div>
-            </article>
-
-            <article role="tabpanel" hidden={selectedTab !== '2022'}>
               <h2 className='tabHeader'>2022</h2>
-              <div id="2023" className='flexContainerRow galleryYear'>
+              <hr/>
+              <div id="2022" className='flexContainerRow galleryYear'>
                   {populateArt(2022)}
               </div>
-            </article>
-
-            <article role="tabpanel" hidden={selectedTab !== '2021'}>
               <h2 className='tabHeader'>2021</h2>
-              <div id="2023" className='flexContainerRow galleryYear'>
+              <hr/>
+              <div id="2021" className='flexContainerRow galleryYear'>
                   {populateArt(2021)}
               </div>
-            </article>
-
-            <article role="tabpanel" hidden={selectedTab !== '2020'}>
-              <h2 className='tabHeader'>2020 (and 2019)</h2>
-              <div id="2023" className='flexContainerRow galleryYear'>
+              <h2 className='tabHeader'>2020 (and older)</h2>
+              <hr/>
+              <div id="2020" className='flexContainerRow galleryYear'>
                   {populateArt(2020)}
               </div>
             </article>

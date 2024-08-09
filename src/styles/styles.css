@@ -117,6 +117,7 @@ and (max-device-width: 1000px){
 
 .galleryImage:hover {
     opacity: .75;
+    transform: scale(.95);
 }
 
 .fullscreenBackground{

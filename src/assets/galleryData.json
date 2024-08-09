@@ -667,6 +667,13 @@
         "nsfw": false 
     },
     {
+        "id": "woods",
+        "artURL": "art/2020/woods.png",
+        "thumbURL": "art/2020/thumbnails/woods.png",
+        "year": 2020,
+        "nsfw": false 
+    },
+    {
         "id": "summer&winter2020",
         "artURL": "art/2020/summer&winter2020.png",
         "thumbURL": "art/2020/thumbnails/summer&winter2020.png",

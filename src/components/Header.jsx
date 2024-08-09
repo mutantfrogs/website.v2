@@ -9,8 +9,8 @@ export default function Header() {
     switch (location.pathname) {
       case '/':
         return "about";
-      case '/gallery':
-        return "gallery";
+      case '/explore':
+        return "explore";
       case '/blog':
         return "blog";
       default:
@@ -35,8 +35,8 @@ export default function Header() {
               <Link to="/">
                 <button className='headerNavigationBtn'>about</button>
                 </Link>
-              <Link to="/gallery">
-                <button className='headerNavigationBtn'>gallery</button>
+              <Link to="/explore">
+                <button className='headerNavigationBtn'>explore</button>
                 </Link>
               <Link to="/blog">
                 <button className='headerNavigationBtn'>blog</button>

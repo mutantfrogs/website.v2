@@ -1,6 +1,3 @@
-import Canvas3D from './Canvas3D'
-import Socials from './Socials'
-
 export default function BlogWindow() {
 
     return (
@@ -11,7 +8,7 @@ export default function BlogWindow() {
           </div>
 
           <div className='flexContainerColumn'>
-        
+            
           </div>
         </div>
       </div>

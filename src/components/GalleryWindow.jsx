@@ -12,10 +12,6 @@ export default function GalleryWindow() {
     setSelectedTab(tabId);
   };
 
-  const handleNsfwChange = (event) => {
-    setNsfwChecked(event.target.checked);
-  };
-
   const handleImageCLick = (src) => {
     setimageSrc(src);
   };
@@ -93,7 +89,7 @@ export default function GalleryWindow() {
             </article>
           </section>
         </div>
-        {imageSrc && (<FullscreenImage src={imageSrc} onClose={handleCloseFullscreen} />)}
+        {imageSrc && (<FullscreenImage src={imageSrc} onClose={handleCloseFullscreen}/>)}
     </div>
   );
 }

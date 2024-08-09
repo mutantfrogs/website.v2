@@ -1,9 +1,27 @@
+import React, { useState } from 'react';
+import galleryData from './../assets/galleryData.json'
+
 export default function FullscreenImage({ src, onClose }){
 
-    const fileName = src.replace(/^.*[\\/]/, '');
+    const [currentSrc, setCurrentSrc] = useState(src);
+    const fileName = currentSrc.replace(/^.*[\\/]/, '');
 
     const closeFullscreenByClick = () => {
       onClose();
+    }
+
+    const nextImage = (event) => {
+      event.stopPropagation();
+      const currentIndex = galleryData.findIndex(art => art.artURL === currentSrc);
+      const newIndex = (currentIndex + 1) % galleryData.length;
+      setCurrentSrc(galleryData[newIndex].artURL);
+    }
+
+    const previousImage = (event) => {
+      event.stopPropagation();
+      const currentIndex = galleryData.findIndex(art => art.artURL === currentSrc);
+      const newIndex = (currentIndex - 1 + galleryData.length) % galleryData.length;
+      setCurrentSrc(galleryData[newIndex].artURL);
     }
 
     return(
@@ -18,7 +36,11 @@ export default function FullscreenImage({ src, onClose }){
             </div>
 
             <div className='flexContainerColumn'>
-                <img className="fullscreenImage" src={src}></img>
+                <img className="fullscreenImage" src={currentSrc}></img>
+                <div className='flexContainerRow'>
+                  <button onClick={previousImage} className='galleryArrows' style={{left: '20px'}}>previous</button>
+                  <button onClick={nextImage} className='galleryArrows' style={{ right: '20px' }}>next</button>
+                </div>
             </div>
           </div>
         </div>

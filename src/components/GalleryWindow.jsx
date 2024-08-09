@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import galleryData from './../assets/galleryData.json'
 import FullscreenImage from './FullscreenImage';
-import { useNavigate, useParams } from 'react-router-dom';
+import goodnightGif from './../assets/goodnight.gif';
 
 export default function GalleryWindow() {
 
@@ -83,6 +83,12 @@ export default function GalleryWindow() {
               <hr/>
               <div id="2020" className='flexContainerRow galleryYear'>
                   {populateArt(2020)}
+              </div>
+            </article>
+
+            <article role="tabpanel" hidden={selectedTab !== 'more'}>
+              <div className='flexContainerRow'>
+                <img src={goodnightGif} className='centeredText'></img>
               </div>
             </article>
           </section>

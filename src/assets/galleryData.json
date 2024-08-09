@@ -567,5 +567,124 @@
         "thumbURL": "art/2021/thumbnails/toolz.png",
         "year": 2021,
         "nsfw": false 
+    },
+    {
+        "id": "arm",
+        "artURL": "art/2020/arm.png",
+        "thumbURL": "art/2020/thumbnails/arm.png",
+        "year": 2020,
+        "nsfw": false 
+    },
+    {
+        "id": "candleman",
+        "artURL": "art/2020/candleman.png",
+        "thumbURL": "art/2020/thumbnails/candleman.png",
+        "year": 2020,
+        "nsfw": false 
+    },
+    {
+        "id": "crawler",
+        "artURL": "art/2020/crawler.jpg",
+        "thumbURL": "art/2020/thumbnails/crawler.png",
+        "year": 2020,
+        "nsfw": false 
+    },
+    {
+        "id": "dog",
+        "artURL": "art/2020/dog.png",
+        "thumbURL": "art/2020/thumbnails/dog.png",
+        "year": 2020,
+        "nsfw": false 
+    },
+    {
+        "id": "eyeclown",
+        "artURL": "art/2020/eyeclown.png",
+        "thumbURL": "art/2020/thumbnails/eyeclown.png",
+        "year": 2020,
+        "nsfw": false 
+    },
+    {
+        "id": "fall2020",
+        "artURL": "art/2020/fall2020.png",
+        "thumbURL": "art/2020/thumbnails/fall2020.png",
+        "year": 2020,
+        "nsfw": false 
+    },
+    {
+        "id": "kappa",
+        "artURL": "art/2020/kappa.png",
+        "thumbURL": "art/2020/thumbnails/kappa.png",
+        "year": 2020,
+        "nsfw": false 
+    },
+    {
+        "id": "lumps",
+        "artURL": "art/2020/lumps.png",
+        "thumbURL": "art/2020/thumbnails/lumps.png",
+        "year": 2020,
+        "nsfw": false 
+    },
+    {
+        "id": "march",
+        "artURL": "art/2020/march.jpg",
+        "thumbURL": "art/2020/thumbnails/march.png",
+        "year": 2020,
+        "nsfw": false 
+    },
+    {
+        "id": "olivia",
+        "artURL": "art/2020/olivia.png",
+        "thumbURL": "art/2020/thumbnails/olivia.png",
+        "year": 2020,
+        "nsfw": false 
+    },
+    {
+        "id": "nepesko",
+        "artURL": "art/2020/nepesko.png",
+        "thumbURL": "art/2020/thumbnails/nepesko.png",
+        "year": 2020,
+        "nsfw": false 
+    },
+    {
+        "id": "montresko",
+        "artURL": "art/2020/montresko.png",
+        "thumbURL": "art/2020/thumbnails/montresko.png",
+        "year": 2020,
+        "nsfw": false 
+    },
+    {
+        "id": "paper2020",
+        "artURL": "art/2020/paper2020.png",
+        "thumbURL": "art/2020/thumbnails/paper2020.png",
+        "year": 2020,
+        "nsfw": false 
+    },
+    {
+        "id": "raptor",
+        "artURL": "art/2020/raptor.png",
+        "thumbURL": "art/2020/thumbnails/raptor.png",
+        "year": 2020,
+        "nsfw": false 
+    },
+    {
+        "id": "summer&winter2020",
+        "artURL": "art/2020/summer&winter2020.png",
+        "thumbURL": "art/2020/thumbnails/summer&winter2020.png",
+        "year": 2020,
+        "nsfw": false 
+    },
+    {
+        "id": "tammy",
+        "artURL": "art/2020/tammy.png",
+        "thumbURL": "art/2020/thumbnails/tammy.png",
+        "year": 2020,
+        "nsfw": false 
+    },
+    {
+        "id": "watcher",
+        "artURL": "art/2020/watcher.png",
+        "thumbURL": "art/2020/thumbnails/watcher.png",
+        "year": 2020,
+        "nsfw": false 
     }
 ]

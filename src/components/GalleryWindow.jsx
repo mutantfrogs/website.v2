@@ -111,7 +111,7 @@ export default function GalleryWindow() {
             </article>
 
             <article role="tabpanel" hidden={selectedTab !== '2020'}>
-              <h2 className='tabHeader'>2020</h2>
+              <h2 className='tabHeader'>2020 (and 2019)</h2>
               <div id="2023" className='flexContainerRow galleryYear'>
                   {populateArt(2020)}
               </div>

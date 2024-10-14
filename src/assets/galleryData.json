@@ -1,8 +1,37 @@
 [
+    
     {
-        "id": "august2024",
-        "artURL": "art/2024/august2024.png",
-        "thumbURL": "art/2024/thumbnails/august2024.png",
+        "id": "newpfp",
+        "artURL": "art/2024/newpfp.png",
+        "thumbURL": "art/2024/thumbnails/newpfp.png",
+        "year": 2024,
+        "nsfw": false
+    },
+    {
+        "id": "fall2024",
+        "artURL": "art/2024/fall2024.png",
+        "thumbURL": "art/2024/thumbnails/fall2024.png",
+        "year": 2024,
+        "nsfw": false
+    },
+    {
+        "id": "heartthrob",
+        "artURL": "art/2024/heartthrob.png",
+        "thumbURL": "art/2024/thumbnails/heartthrob.png",
+        "year": 2024,
+        "nsfw": false
+    },
+    {
+        "id": "eek",
+        "artURL": "art/2024/eek.png",
+        "thumbURL": "art/2024/thumbnails/eek.png",
+        "year": 2024,
+        "nsfw": false
+    },
+    {
+        "id": "coocoo",
+        "artURL": "art/2024/coocoo.png",
+        "thumbURL": "art/2024/thumbnails/coocoo.png",
         "year": 2024,
         "nsfw": false
     },

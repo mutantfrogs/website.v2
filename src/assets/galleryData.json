@@ -36,6 +36,13 @@
         "nsfw": false
     },
     {
+        "id": "august2024",
+        "artURL": "art/2024/august2024.png",
+        "thumbURL": "art/2024/thumbnails/august2024.png",
+        "year": 2024,
+        "nsfw": false
+    },
+    {
         "id": "greener",
         "artURL": "art/2024/greener.png",
         "thumbURL": "art/2024/thumbnails/greener.png",

@@ -1,49 +1,98 @@
-import React, { useState } from 'react';
-import galleryData from './../assets/galleryData.json'
+import React, { useState, useEffect, useRef } from 'react';
+import galleryData from './../assets/galleryData.json';
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
-export default function FullscreenImage({ src, onClose }){
+export default function FullscreenImage({ src, onClose }) {
+  const [currentSrc, setCurrentSrc] = useState(src);
+  const [initialPosition, setInitialPosition] = useState({ x: 0, y: 0 });
+  const [loading, setLoading] = useState(true);
+  const imageRef = useRef(null);
 
-    const [currentSrc, setCurrentSrc] = useState(src);
-    const fileName = currentSrc.replace(/^.*[\\/]/, '');
+  const fileName = currentSrc.replace(/^.*[\\/]/, '');
 
-    const closeFullscreenByClick = () => {
-      onClose();
-    }
+  const closeFullscreenByClick = () => {
+    
+  }
 
-    const nextImage = (event) => {
-      event.stopPropagation();
-      const currentIndex = galleryData.findIndex(art => art.artURL === currentSrc);
-      const newIndex = (currentIndex + 1) % galleryData.length;
-      setCurrentSrc(galleryData[newIndex].artURL);
-    }
+  const nextImage = (event, resetTransform) => {
+    event.stopPropagation();
+    const currentIndex = galleryData.findIndex(art => art.artURL === currentSrc);
+    const newIndex = (currentIndex + 1) % galleryData.length;
+    setCurrentSrc(galleryData[newIndex].artURL);
+    resetTransform();
+    setLoading(true);
+  }
 
-    const previousImage = (event) => {
-      event.stopPropagation();
-      const currentIndex = galleryData.findIndex(art => art.artURL === currentSrc);
-      const newIndex = (currentIndex - 1 + galleryData.length) % galleryData.length;
-      setCurrentSrc(galleryData[newIndex].artURL);
-    }
+  const previousImage = (event, resetTransform) => {
+    event.stopPropagation();
+    const currentIndex = galleryData.findIndex(art => art.artURL === currentSrc);
+    const newIndex = (currentIndex - 1 + galleryData.length) % galleryData.length;
+    setCurrentSrc(galleryData[newIndex].artURL);
+    resetTransform();
+    setLoading(true);
+  }
 
-    return(
-      <div className='fullscreenBackground' onClick={closeFullscreenByClick}>
-        <div className='flexContainerRow' id="fullScreenContainer" style={{ height: '100%'}}>
-          <div className='window'>
-            <div className="title-bar">
+  useEffect(() => {
+    const updatePosition = () => {
+      if (imageRef.current) {
+        const { width, height } = imageRef.current;
+
+        const newX = (window.innerWidth - width) / 2;
+        const newY = (window.innerHeight - height) / 2;
+        setInitialPosition({ x: newX, y: newY });
+      }
+    };
+    updatePosition();
+  }, [currentSrc]);
+
+  return (
+    <div className='fullscreenBackground' onClick={closeFullscreenByClick}>
+      <div className='flexContainerRow' id="fullScreenContainer" style={{ height: '100%' }}>
+        <div className='window'>
+          <div className="title-bar">
             <div className="title-bar-text">🌎 {fileName} - Windows Picture Viewer</div>
-              <div className="title-bar-controls">
-                  <button aria-label="Close" onClick={onClose}></button>
-                  </div>
+            <div className="title-bar-controls">
+              <button aria-label="Close" onClick={onClose}></button>
             </div>
+          </div>
 
-            <div className='flexContainerColumn'>
-                <img className="fullscreenImage" src={currentSrc}></img>
-                <div className='flexContainerRow'>
-                  <button onClick={previousImage} className='galleryArrows' style={{left: '20px'}}>previous<br/>{'<-----'}</button>
-                  <button onClick={nextImage} className='galleryArrows' style={{ right: '20px' }}>next<br/>{'----->'}</button>
-                </div>
-            </div>
+          <div className='flexContainerColumn'>
+          {loading && (<progress style={{
+                  position: 'absolute',
+                  top: '50%',
+                  zIndex: 100,
+                  left: '50%',
+                  transform: 'translate(-50%, -50%)', // Center the progress bar
+                }} ></progress>)}
+            <TransformWrapper initialScale={1} initialPositionX={initialPosition.x} initialPositionY={initialPosition.y} doubleClick={{ mode: "reset" }}>
+              {({ resetTransform }) => (
+                <>
+                  <TransformComponent>
+                    <img 
+                      ref={imageRef}
+                      className="fullscreenImage" 
+                      src={currentSrc} 
+                      alt="gallery" 
+                      onLoad={() => {
+                        setLoading(false);
+                        resetTransform;
+                      }}
+                    />
+                  </TransformComponent>
+                  <div className='flexContainerRow'>
+                    <button onClick={(e) => previousImage(e, resetTransform)} className='galleryArrows' style={{ left: '20px' }}>
+                      previous<br />{'<-----'}
+                    </button>
+                    <button onClick={(e) => nextImage(e, resetTransform)} className='galleryArrows' style={{ right: '20px' }}>
+                      next<br />{'----->'}
+                    </button>
+                  </div>
+                </>
+              )}
+            </TransformWrapper>
           </div>
         </div>
       </div>
-    )
+    </div>
+  );
 }

@@ -2,6 +2,7 @@ import instagram from '../assets/instagram.png'
 import github from '../assets/github.png'
 import youtube from '../assets/youtube.png'
 import twitter from '../assets/twitter.png'
+import bluesky from '../assets/bluesky.png'
 
 export default function Socials(){
     return(
@@ -10,8 +11,8 @@ export default function Socials(){
             <a target="_blank" href="https://www.instagram.com/mutantfrogs/">
                 <img className="socialsBtn" src={instagram} alt="Instagram" />
                 </a>
-            <a target="_blank" href="https://twitter.com/mutantfrogs">
-                <img className="socialsBtn" src={twitter} alt="Twitter" />
+            <a target="_blank" href="https://bsky.app/profile/mutantfro.gs">
+                <img className="socialsBtn" src={bluesky} alt="Blue Sky" />
                 </a>
             <a target="_blank" href="https://www.youtube.com/@mutantfrogs">
                 <img className="socialsBtn" src={youtube} alt="YouTube" />

@@ -17,8 +17,8 @@ function Mesh3D() {
 
   // animation variables
   const [currentFrame, setCurrentFrame] = useState(0);
-  const frameDurations = [4000, 200];
-  const frameDiviations = [2000, 50]
+  const frameDurations = [3000, 200];
+  const frameDiviations = [1500, 50]
   const frameCount = 4;
   const frameWidth = 1 / frameCount;
 

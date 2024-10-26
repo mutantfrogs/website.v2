@@ -165,17 +165,22 @@ and (max-device-width: 1000px){
 }
 
 .galleryArrows{
+    height: 50px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
     z-index: 30;
-    width: 70px;
-    height: 70px;
+    transform: scale(1);
+    transform-origin: center center;
 }
 
-.galleryArrowsImg:hover{
-    transform: scale(1.1);
+.galleryArrows:hover{
+    transform: scale(1.2);
+}
+
+.galleryArrows:active{
+    transform: scale(0.9);
 }
 
 @media only screen 
@@ -207,5 +212,6 @@ and (max-device-width: 1000px)
         z-index: 30;
         width: 50px;
         height: 50px;
+        transform: scale(1);
     }
 } 

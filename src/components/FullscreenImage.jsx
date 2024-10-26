@@ -82,12 +82,8 @@ export default function FullscreenImage({ src, onClose }) {
                     />
                   </TransformComponent>
                   <div className='flexContainerRow'>
-                    <button onClick={(e) => previousImage(e, resetTransform)} className='galleryArrows' style={{ left: '20px' }}>
-                      <img className='galleryArrowsImg' style={{height: '45px'}} src={leftArrow}></img>
-                    </button>
-                    <button onClick={(e) => nextImage(e, resetTransform)} className='galleryArrows' style={{ right: '20px' }}>
-                      <img className='galleryArrowsImg flipImageX' style={{height: '45px'}} src={rightArrow}></img>
-                    </button>
+                      <img onClick={(e) => previousImage(e, resetTransform)} className='galleryArrows' style={{left: '20px'}} src={leftArrow}></img>
+                      <img onClick={(e) => nextImage(e, resetTransform)} className='galleryArrows' style={{right: '20px'}} src={rightArrow}></img>
                   </div>
                 </>
               )}

@@ -1,4 +1,4 @@
-import { Canvas, useFrame} from "@react-three/fiber";
+import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls } from '@react-three/drei';
 import React, { useRef, useEffect, useState } from 'react';
 import * as THREE from 'three';
@@ -17,9 +17,9 @@ function Mesh3D() {
 
   // animation variables
   const [currentFrame, setCurrentFrame] = useState(0);
-  const frameDurations = [3500, 200, 2500, 200, 500];
-  const frameDiviations = [1000, 50, 1000, 50, 0]
-  const frameCount = 5;
+  const frameDurations = [3500, 200, 2500, 200, 1500, 250, 250, 2000, 200];
+  const frameDiviations = [1000, 50, 1000, 50, 0, 0, 0, 1000, 50]
+  const frameCount = 9;
   const frameWidth = 1 / frameCount;
 
   //load textures
@@ -35,8 +35,8 @@ function Mesh3D() {
     ];
 
     textureRef.current = textures.map((texturePath, index) => {
-    const texture = loader.load(texturePath);
-      
+      const texture = loader.load(texturePath);
+
       //applies spritesheet rules to front face
       if (index === 4) {
         texture.wrapS = THREE.RepeatWrapping;
@@ -45,7 +45,7 @@ function Mesh3D() {
         texture.wrapS = THREE.ClampToEdgeWrapping;
         texture.wrapT = THREE.ClampToEdgeWrapping;
       }
-  
+
       return new THREE.MeshStandardMaterial({ map: texture });
     });
 
@@ -74,33 +74,41 @@ function Mesh3D() {
   //face animation logic
   useEffect(() => {
     //change frames
+    //0 default
+    //1 default blink
+    //2 pout
+    //3 pout blink
+    //4 troll
+    //5 eyebrow down
+    //6 eyebrow up
+    //7 serious 
+    //8 serious blink
+
     const updateFrame = () => {
       setCurrentFrame((currentFrame) => {
-        switch (currentFrame) {
-          case 0:
-            return 1;
-          case 1: 
-            const emoteChance = Math.random();
-            console.log(emoteChance);
-            if(emoteChance > 0.65){
-              if(emoteChance > 0.95){
-                return 4;
-              }
-                return 2;
-            } else {
-              return 0;
+        const normalChance = Math.random();
+        const emoteChance = Math.random();
+        switch(currentFrame){
+          case 0: return 1;
+          case 1:
+            switch (true) {
+              case emoteChance > 0.95:
+                return 4; //troll
+              case emoteChance > 0.70:
+                return 5; //eyebrow
+              case emoteChance > 0.50:
+                return 7; //serious
+              case emoteChance > 0.20:
+                return 2; //pout
+              default: return 0;
             }
-          case 2:
-            return 3;
-          case 3:
-            const normalChance = Math.random();
-            if(normalChance > 0.6){
-              return 2;
-            } else {
-              return 0;
-            }
-          case 4:
-            return 0;
+          case 2: return 3;
+          case 3: return normalChance > 0.6 ? 0:2  
+          case 4: return 0;
+          case 5: return normalChance > 0.8 ? 0:6  
+          case 6: return 5;
+          case 7: return 8;
+          case 8: return normalChance > 0.6 ? 0:7  
         }
       });
     };
@@ -117,14 +125,14 @@ function Mesh3D() {
   const calculateTimeout = () => {
     const operatorStatus = Math.random();
 
-    if(operatorStatus > 0.5){
-      return(frameDurations[currentFrame] + frameDiviations[currentFrame]);
-    } 
+    if (operatorStatus > 0.5) {
+      return (frameDurations[currentFrame] + frameDiviations[currentFrame]);
+    }
     else {
-      return(frameDurations[currentFrame] - frameDiviations[currentFrame]);
+      return (frameDurations[currentFrame] - frameDiviations[currentFrame]);
     }
   }
-  
+
   //function to animate cube
   useFrame(() => {
     //updates face with current frame
@@ -136,7 +144,7 @@ function Mesh3D() {
     //head follows mouse
     if (meshRef.current) {
       meshRef.current.rotation.x = -mousePosition.y * 0.6;
-      meshRef.current.rotation.y = mousePosition.x * 0.6; 
+      meshRef.current.rotation.y = mousePosition.x * 0.6;
     }
   });
 
@@ -149,13 +157,13 @@ function Mesh3D() {
 
 export default function Canvas3D() {
   return (
-          <div className='flexContainerColumn'>
-            <Canvas style={{ width: '275px', height: '275px'}} orthographic camera={{ zoom: 100, position: [0, 0, 100] }}>
-              <ambientLight intensity={0.5} />
-              <directionalLight color="white" position={[10, 10, 10]} />
-              <Mesh3D />
-              <OrbitControls enableZoom={false} enablePan={false} />
-            </Canvas>
-      </div>
+    <div className='flexContainerColumn'>
+      <Canvas style={{ width: '275px', height: '275px' }} orthographic camera={{ zoom: 100, position: [0, 0, 100] }}>
+        <ambientLight intensity={0.5} />
+        <directionalLight color="white" position={[10, 10, 10]} />
+        <Mesh3D />
+        <OrbitControls enableZoom={false} enablePan={false} />
+      </Canvas>
+    </div>
   );
 }

@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import galleryData from './../assets/galleryData.json';
+import leftArrow from './../assets/leftArrow.webp'
+import rightArrow from './../assets/rightArrow.webp'
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 export default function FullscreenImage({ src, onClose }) {
@@ -81,10 +83,10 @@ export default function FullscreenImage({ src, onClose }) {
                   </TransformComponent>
                   <div className='flexContainerRow'>
                     <button onClick={(e) => previousImage(e, resetTransform)} className='galleryArrows' style={{ left: '20px' }}>
-                      previous<br />{'<-----'}
+                      <img className='galleryArrowsImg' style={{height: '45px'}} src={leftArrow}></img>
                     </button>
                     <button onClick={(e) => nextImage(e, resetTransform)} className='galleryArrows' style={{ right: '20px' }}>
-                      next<br />{'----->'}
+                      <img className='galleryArrowsImg flipImageX' style={{height: '45px'}} src={rightArrow}></img>
                     </button>
                   </div>
                 </>

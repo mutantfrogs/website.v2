@@ -17,8 +17,8 @@ function Mesh3D() {
 
   // animation variables
   const [currentFrame, setCurrentFrame] = useState(0);
-  const frameDurations = [3000, 200];
-  const frameDiviations = [1500, 50]
+  const frameDurations = [3500, 200, 2500, 200];
+  const frameDiviations = [1000, 50, 1000, 50]
   const frameCount = 4;
   const frameWidth = 1 / frameCount;
 
@@ -75,12 +75,26 @@ function Mesh3D() {
   useEffect(() => {
     //change frames
     const updateFrame = () => {
-      setCurrentFrame((prevFrame) => {
-        switch (prevFrame) {
+      setCurrentFrame((currentFrame) => {
+        switch (currentFrame) {
           case 0:
             return 1;
-          case 1:
-            return 0;
+          case 1: 
+            const ponderChance = Math.random();
+            if(ponderChance > 0.75){
+              return 2;
+            } else {
+              return 0;
+            }
+          case 2:
+            return 3;
+          case 3:
+            const normalChance = Math.random();
+            if(normalChance > 0.6){
+              return 2;
+            } else {
+              return 0;
+            }
         }
       });
     };
@@ -98,11 +112,9 @@ function Mesh3D() {
     const operatorStatus = Math.random();
 
     if(operatorStatus > 0.5){
-      console.log(frameDurations[currentFrame] + frameDiviations[currentFrame]);
       return(frameDurations[currentFrame] + frameDiviations[currentFrame]);
     } 
     else {
-      console.log(frameDurations[currentFrame] - frameDiviations[currentFrame]);
       return(frameDurations[currentFrame] - frameDiviations[currentFrame]);
     }
   }
@@ -117,8 +129,8 @@ function Mesh3D() {
 
     //head follows mouse
     if (meshRef.current) {
-      meshRef.current.rotation.x = -mousePosition.y * 0.5;
-      meshRef.current.rotation.y = mousePosition.x * 0.5; 
+      meshRef.current.rotation.x = -mousePosition.y * 0.6;
+      meshRef.current.rotation.y = mousePosition.x * 0.6; 
     }
   });
 

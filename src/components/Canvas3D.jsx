@@ -17,9 +17,9 @@ function Mesh3D() {
 
   // animation variables
   const [currentFrame, setCurrentFrame] = useState(0);
-  const frameDurations = [3500, 200, 2500, 200];
-  const frameDiviations = [1000, 50, 1000, 50]
-  const frameCount = 4;
+  const frameDurations = [3500, 200, 2500, 200, 500];
+  const frameDiviations = [1000, 50, 1000, 50, 0]
+  const frameCount = 5;
   const frameWidth = 1 / frameCount;
 
   //load textures
@@ -80,9 +80,13 @@ function Mesh3D() {
           case 0:
             return 1;
           case 1: 
-            const ponderChance = Math.random();
-            if(ponderChance > 0.75){
-              return 2;
+            const emoteChance = Math.random();
+            console.log(emoteChance);
+            if(emoteChance > 0.65){
+              if(emoteChance > 0.95){
+                return 4;
+              }
+                return 2;
             } else {
               return 0;
             }
@@ -95,6 +99,8 @@ function Mesh3D() {
             } else {
               return 0;
             }
+          case 4:
+            return 0;
         }
       });
     };

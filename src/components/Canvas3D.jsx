@@ -84,6 +84,10 @@ function Mesh3D() {
     //6 eyebrow up
     //7 serious 
     //8 serious blink
+    //9 yap close
+    //10 yap open
+    //11 shifty left
+    //12 shifty right
 
     const updateFrame = () => {
       setCurrentFrame((currentFrame) => {
@@ -94,15 +98,15 @@ function Mesh3D() {
             switch (true) {
               case emoteChance > 0.95:
                 return 4; //troll
-              case emoteChance > 0.70:
+              case emoteChance > 0.85:
                 return 5; //eyebrow
-              case emoteChance > 0.60:
+              case emoteChance > 0.75:
                 return 9; //yap
-              case emoteChance > 0.50:
+              case emoteChance > 0.65:
                 return 7; //serious
-              case emoteChance > 0.40:
+              case emoteChance > 0.55:
                 return 11; //shifty
-              case emoteChance > 0.20:
+              case emoteChance > 0.45:
                 return 2; //pout
               default: return 0;
             }

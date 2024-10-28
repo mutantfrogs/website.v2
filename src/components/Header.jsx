@@ -16,7 +16,7 @@ export default function Header() {
       case '/blog':
         return "blog";
       default:
-        return "mutantfrogs";
+        return "404";
     }
   };
 
@@ -55,7 +55,7 @@ export default function Header() {
         </div>
 
         <div className="status-bar">
-          <p style={{textAlign: 'center'}} className="status-bar-field">be yourself no matter what!</p>
+          <p style={{textAlign: 'center'}} className="status-bar-field"><marquee>welcome to my website and please enjoy your stay!</marquee></p>
         </div>
 
       </div>

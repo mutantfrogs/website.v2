@@ -17,10 +17,11 @@ function Mesh3D() {
 
   // animation variables
   const [currentFrame, setCurrentFrame] = useState(0);
-  const frameDurations = [3500, 200, 2500, 200, 1500, 250, 250, 2000, 200];
-  const frameDiviations = [1000, 50, 1000, 50, 0, 0, 0, 1000, 50]
-  const frameCount = 9;
+  const frameDurations = [3500, 200, 2500, 200, 1500, 250, 250, 2000, 200, 250, 250, 500, 500];
+  const frameDiviations = [1000, 50, 1000, 50, 0, 0, 0, 500, 50, 0, 0, 100, 100]
+  const frameCount = 13;
   const frameWidth = 1 / frameCount;
+  const cycleCount = useRef(0);
 
   //load textures
   useEffect(() => {
@@ -86,7 +87,6 @@ function Mesh3D() {
 
     const updateFrame = () => {
       setCurrentFrame((currentFrame) => {
-        const normalChance = Math.random();
         const emoteChance = Math.random();
         switch(currentFrame){
           case 0: return 1;
@@ -96,19 +96,60 @@ function Mesh3D() {
                 return 4; //troll
               case emoteChance > 0.70:
                 return 5; //eyebrow
+              case emoteChance > 0.60:
+                return 9; //yap
               case emoteChance > 0.50:
                 return 7; //serious
+              case emoteChance > 0.40:
+                return 11; //shifty
               case emoteChance > 0.20:
                 return 2; //pout
               default: return 0;
             }
           case 2: return 3;
-          case 3: return normalChance > 0.6 ? 0:2  
+          case 3: return emoteChance > 0.7 ? 0:2  
           case 4: return 0;
-          case 5: return normalChance > 0.8 ? 0:6  
+          case 5: 
+          if(cycleCount.current<6){
+            cycleCount.current++;
+            return 6;
+          } 
+            else{
+              cycleCount.current = 0;
+              return 0;
+            }
           case 6: return 5;
           case 7: return 8;
-          case 8: return normalChance > 0.6 ? 0:7  
+          case 8:
+            if(cycleCount.current<3){
+              cycleCount.current++;
+              return 7;
+            } 
+              else{
+                cycleCount.current = 0;
+                return 0;
+              }
+
+          case 9:
+            if(cycleCount.current<6){
+              cycleCount.current++;
+              return 10;
+            } 
+              else{
+                cycleCount.current = 0;
+                return 0;
+              }
+          case 10: return 9;
+          case 11:
+            if(cycleCount.current<4){
+              cycleCount.current++;
+              return 12;
+            } 
+              else{
+                cycleCount.current = 0;
+                return 0;
+              }     
+          case 12: return 11;
         }
       });
     };

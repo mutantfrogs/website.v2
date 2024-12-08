@@ -1,5 +1,5 @@
-import Canvas3D from './Canvas3D'
-import Socials from './Socials'
+import Canvas3D from './Canvas3D.jsx'
+import Socials from './Socials.jsx'
 
 export default function AboutWindow() {
 

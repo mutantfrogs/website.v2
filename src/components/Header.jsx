@@ -14,6 +14,8 @@ export default function Header() {
         return "explore";
       case '/blog':
         return "blog";
+      case '/notes':
+        return "notes";
       default:
         return "404";
     }
@@ -47,8 +49,8 @@ export default function Header() {
               <Link to="/explore">
                 <button className='headerNavigationBtn'>explore</button>
                 </Link>
-              <Link to="/blog">
-                <button className='headerNavigationBtn'>blog</button>
+              <Link to="/notes">
+                <button className='headerNavigationBtn'>notes</button>
                 </Link>
             </div>
         </div>

@@ -1,8 +1,8 @@
-import instagram from '../assets/instagram.png'
-import github from '../assets/github.png'
-import youtube from '../assets/youtube.png'
-import twitter from '../assets/twitter.png'
-import bluesky from '../assets/bluesky.png'
+import instagram from '../../assets/instagram.png'
+import github from '../../assets/github.png'
+import youtube from '../../assets/youtube.png'
+import twitter from '../../assets/twitter.png'
+import bluesky from '../../assets/bluesky.png'
 
 export default function Socials(){
     return(

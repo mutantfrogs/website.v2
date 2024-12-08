@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import AboutWindow from '../components/AboutWindow';
+import AboutWindow from '../components/about/AboutWindow';
 
 export default function AboutPage(props){
 

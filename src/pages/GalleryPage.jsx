@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import GalleryWindow from '../components/GalleryWindow';
+import GalleryWindow from '../components/gallery/GalleryWindow';
 
 export default function GalleryPage(props){
 

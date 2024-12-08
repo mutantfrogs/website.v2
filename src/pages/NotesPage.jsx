@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
-import UnderConstruction from '../components/UnderConstruction.jsx';
+import NotesWindow from '../components/notes/NotesWindow.jsx';
+import UnderConstruction from "../components/UnderConstruction.jsx"
 
-export default function BlogPage(props){
+export default function NotePage(props){
 
     useEffect(() => {document.title = props.title;return () => {};}, [props.title]);
 

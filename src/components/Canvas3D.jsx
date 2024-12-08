@@ -4,7 +4,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import * as THREE from 'three';
 import white8x8 from '../assets/white8x8.png';
 import face8x8 from '../assets/face8x8.png';
-import face16x8 from '../assets/face16x8.png';
+import faceAnimated from '../assets/faceAnimated.png';
 //import qr from '../assets/qr.png';
 import qr from '../assets/tempQR.png';
 
@@ -31,7 +31,7 @@ function Mesh3D() {
       white8x8, //left
       white8x8, //top
       white8x8, //bottom
-      face16x8, //front
+      faceAnimated, //front
       qr, //back
     ];
 

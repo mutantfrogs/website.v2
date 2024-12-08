@@ -1,4 +1,3 @@
-import defaultBanner from '../assets/defaultBanner.png';
 import {useState} from 'react';
 import { Link, useLocation } from 'react-router-dom';
 

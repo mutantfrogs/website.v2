@@ -7,7 +7,7 @@ export default function AboutWindow() {
       <div className='flexContainerRow windowMargin'>
         <div className='window newWindow aboutWindow'>
           <div className="title-bar">
-            <div className="title-bar-text">📝 notepad</div>
+            <div className="title-bar-text">🖥️ my computer</div>
           </div>
 
           <div className='flexContainerColumn'>

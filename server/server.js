@@ -6,7 +6,15 @@ require("dotenv").config();
 const uri = process.env.DATABASE_URI;
 
 const app = express();
-app.use(cors());
+
+const clientUrl = "https://mutantfro-gs-server.onrender.com";
+const corsOptions = {
+    origin: clientUrl,
+    methods: "GET, POST, PUT, DELETE",
+    allowedHeaders: "Content-Type, Authorization",
+  };
+app.use(cors(corsOptions));
+
 app.use(express.json())
 
 mongoose.connect(uri)
@@ -35,6 +43,5 @@ app.get("/getNotes", (req, res) => {
         });
 });
 
-app.listen(3001, () => {
-    console.log("Server started on port 3001")
-})
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

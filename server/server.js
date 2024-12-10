@@ -7,9 +7,8 @@ const uri = process.env.DATABASE_URI;
 
 const app = express();
 
-const clientUrl = "https://mutantfro-gs-server.onrender.com";
 const corsOptions = {
-    origin: clientUrl,
+    origin: "https://mutantfro.gs",
     methods: "GET, POST, PUT, DELETE",
     allowedHeaders: "Content-Type, Authorization",
   };

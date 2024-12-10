@@ -72,7 +72,7 @@ export default function CreateNotes() {
     const uploadNote = () => {
         const canvas = canvasRef.current;
         const img = canvas.toDataURL();
-        axios.post("https://mutantfro-gs-server.onrender.com:3001/uploadNote", {img, comment})
+        axios.post("https://mutantfro-gs-server.onrender.com:10000/uploadNote", {img, comment})
         .then(result => console.log(result))
         .catch(err => console.log(err))
         clearCanvas();

@@ -22,7 +22,6 @@ body{
 
 .urgentHeader{
     color: red;
-    font-size: 96px;
     text-align: center;
     animation: urgentHeaderAnimation 0.75s infinite;
     word-wrap: break-word;

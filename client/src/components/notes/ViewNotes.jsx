@@ -6,6 +6,7 @@ export default function ViewNotes(){
     const [noteEntries, setNoteEntries] = useState([]);
 
     useEffect(() => {
+        //axios.get("http://localhost:3001/getNotes")
         axios.get("https://mutantfro-gs-server.onrender.com/getNotes")
         .then(result => setNoteEntries(result.data))
         .catch(err => console.log(err))
@@ -21,7 +22,7 @@ export default function ViewNotes(){
     };
 
     return(
-        <div className='flexContainerRow'>
+        <div style={{marginTop: 10}} className='flexContainerRow'>
           {renderNotes()}
         </div>
     );

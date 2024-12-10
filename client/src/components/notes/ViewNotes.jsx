@@ -6,7 +6,7 @@ export default function ViewNotes(){
     const [noteEntries, setNoteEntries] = useState([]);
 
     useEffect(() => {
-        axios.get("https://mutantfro-gs-server.onrender.com:10000/getNotes")
+        axios.get("https://mutantfro-gs-server.onrender.com/getNotes")
         .then(result => setNoteEntries(result.data))
         .catch(err => console.log(err))
     }, []);

@@ -10,6 +10,7 @@ export default function NotesWindow() {
             <div className="title-bar-text">🎨 paint</div>
           </div>
           <div className='flexContainerColumn'>
+            <h3>note: this is a work in progress</h3>
             <ViewNotes></ViewNotes>
             <CreateNotes></CreateNotes>
           </div>

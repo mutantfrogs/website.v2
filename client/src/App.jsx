@@ -6,7 +6,8 @@ import BlogPage from './pages/BlogPage';
 import Header from './components/Header'
 import './styles/styles.css'
 import "xp.css/dist/XP.css";
-import NotesPage from "./pages/NotesPage";
+import ViewNotesPage from "./pages/ViewNotesPage";
+import CreateNotesPage from "./pages/CreateNotesPage";
 
 function App() {
     return(
@@ -16,7 +17,8 @@ function App() {
                 <Route path="/" element={<AboutPage title="about - mutantfrogs"/>}/>
                 <Route path="/explore" element={<GalleryPage title="explore - mutantfrogs"/>}/>
                 <Route path="/blog" element={<BlogPage title="blog - mutantfrogs"/>}/>
-                <Route path="/notes" element={<NotesPage title="notes - mutantfrogs"/>}/>
+                <Route path="/notes/view" element={<ViewNotesPage title="notes - mutantfrogs"/>}/>
+                <Route path="/notes/create" element={<CreateNotesPage title="notes - mutantfrogs"/>}/>
             </Routes>
         </Router>
     )

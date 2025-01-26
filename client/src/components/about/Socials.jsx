@@ -8,9 +8,6 @@ export default function Socials(){
     return(
         <div>
             <div className='flexContainerRow'>
-            <a target="_blank" href="https://www.instagram.com/mutantfrogs/">
-                <img className="socialsBtn" src={instagram} alt="Instagram" />
-                </a>
             <a target="_blank" href="https://bsky.app/profile/mutantfro.gs">
                 <img className="socialsBtn" src={bluesky} alt="Blue Sky" />
                 </a>

@@ -103,7 +103,7 @@ export default function CreateNotes() {
                     ></canvas>
 
                     <p style={{ marginBottom: 2 }}>comment:</p>
-                    <textarea onChange={(e) => setComment(e.target.value)}></textarea>
+                    <textarea required onChange={(e) => setComment(e.target.value)}></textarea>
 
                     <button onClick={clearCanvas}>clear</button>
                     <button onClick={uploadNote}>upload</button>

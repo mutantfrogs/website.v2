@@ -13,7 +13,7 @@ export default function CreateNotes() {
     const [lineWeight, setLineWeight] = useState(7);
 
     //upload states
-    const [comment, setComment] = useState();
+    const [comment, setComment] = useState('');
 
     useEffect(() => {
         const canvas = canvasRef.current;
@@ -72,6 +72,10 @@ export default function CreateNotes() {
     }
 
     const uploadNote = () => {
+        if (!comment || comment.trim() === ""){
+            alert("Must include a comment!");
+            return;
+        }
         const canvas = canvasRef.current;
         const img = canvas.toDataURL();
         //axios.post("http://localhost:3001/uploadNote", {img, comment})
@@ -103,7 +107,7 @@ export default function CreateNotes() {
                     ></canvas>
 
                     <p style={{ marginBottom: 2 }}>comment:</p>
-                    <textarea required onChange={(e) => setComment(e.target.value)}></textarea>
+                    <textarea onChange={(e) => setComment(e.target.value)}></textarea>
 
                     <button onClick={clearCanvas}>clear</button>
                     <button onClick={uploadNote}>upload</button>

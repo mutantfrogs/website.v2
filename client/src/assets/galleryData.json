@@ -50,12 +50,6 @@
         "nsfw": false
     },
     {
-        "id": "meettheartist",
-        "artURL": "art/2024/meettheartist.png",
-        "thumbURL": "art/2024/thumbnails/meettheartist.png",
-        "year": 2024,
-        "nsfw": false
-    },{
         "id": "welcometospace",
         "artURL": "art/2024/welcometospace.png",
         "thumbURL": "art/2024/thumbnails/welcometospace.png",
